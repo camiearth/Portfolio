@@ -1,85 +1,382 @@
+/* =========================================================
+   SKILLS / EXPERTISE SECTION
+   ========================================================= */
+
 .skills-container {
-    padding: 5% 10%;
+    position: relative;
+    width: 100%;
+    min-height: 620px;
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background-image: url('../images/websitebackground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* Center the whole section */
+    padding: 65px 60px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    text-align: left;
-
-    svg {
-        color: white;
-    }
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-  
+
+
+/* =========================================================
+   BACKGROUND OVERLAY
+   ========================================================= */
+
+.skills-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* Keep content above overlay */
+
+.skills-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   EXPERTISE TITLE
+   ========================================================= */
+
+.skills-container > h1 {
+    display: block;
+    width: 100%;
+    margin: 0 0 35px 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
 .skills-container .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    /* Smaller gap keeps the columns proportional */
+    gap: 5px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-  
+
+
+/* =========================================================
+   INDIVIDUAL SKILL
+   ========================================================= */
+
 .skills-container .skills-grid .skill {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
+    min-width: 0;
 }
-  
-.chip {
-    color: rgb(39, 40, 34) !important;
-    background-color: white !important;
-    font-size: 0.8rem !important;
-    height: 25px !important;
-  
-    span {
-        font-family: 'Courier Prime', monospace;
-        color: rgb(39, 40, 34);
-    }
-  
-    svg {
-        height: 15px !important;
-    }
+
+
+
+/* =========================================================
+   ICONS
+   ========================================================= */
+
+.skills-container .skills-grid .skill > svg {
+    color: rgb(250, 250, 252);
+
+    width: 62px;
+    height: 62px;
+    margin-bottom: 12px;
 }
+
+
+/* =========================================================
+   SKILL TITLE
+   ========================================================= */
+
+.skills-container .skills-grid .skill h2,
+.skills-container .skills-grid .skill h3 {
+    margin: 0 0 18px 0;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.5rem; /* subtitles */
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* =========================================================
+   DESCRIPTION TEXT
+   ========================================================= */
+
+.skills-container .skills-grid .skill p {
+    width: 100%;
+    margin: 0 auto 25px auto;
+    color: rgba(255, 255, 255, 0.92);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.90rem;
+    font-weight: 350;
+    line-height: 1.45;
+    text-align: center;
+}
+
+
+/* =========================================================
+   FLEX CHIPS
+   ========================================================= */
 
 .flex-chips {
-    line-height: 2;
-    margin: 0.5;
-
-    .chip-title {
-        color: white;
-        padding-right: 10px;
-    }
+    width: 100%;
+    line-height: 1.6;
+    margin: 0.4rem 0;
+    text-align: center;
 }
+
+.flex-chips .chip-title {
+    display: block;
+    text-align: center;
+}
+
+/* =========================================================
+   CHIPS
+   ========================================================= */
+
+.chip {
+    color: rgb(214, 0, 36) !important;
+    background-color: rgb(252, 252, 252) !important;
+    font-size: 0.80rem !important;
+    height: 24px !important;
+    min-height: 22px !important;
+    margin-right: 4px !important;
+    margin-bottom: 5px !important;
+}
+
+/* Chip text */
+.chip span {
+    font-family: 'Courier Prime', monospace;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+
+
+/* Chip icon */
+
+.chip svg {
+    width: auto;
+
+    height: 9px !important;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CHIP CONTAINER
+   ========================================================= */
 
 .flex-chips .MuiChip-root {
-    margin-right: 0.5em;
+    margin-right: 0.35em;
 }
 
+
+/* Outlined chips */
+
 .flex-chips .MuiChip-outlined {
-    background-color: #e0e0e0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    background-color: #e4e3e3;
+
+    font-family:
+        source-code-pro,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Courier New",
         monospace;
 }
 
+
 .flex-chips .MuiChip-outlined span {
-    color: rgb(39, 40, 34);
+    color: rgb(244, 240, 240);
+
+    font-size: 0.72rem;
 }
 
-@media screen {
-    @media (max-width: 768px) {
-        .skills-container {
-            display: block;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-    
-        .skills-container .skills-grid {
-            display: initial;
-        }
-        
-        .skills-container .skills-grid .skill {
-            padding-bottom: 5%;
-        }
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (min-width: 769px) {
+    .skills-container .skills-grid .skill {
+        position: relative;
+        min-height: 390px;
     }
 
-    @media (max-width: 567px) {
-        .skills {
-            font-size: 12px;
-        }
+    .skills-container .skills-grid .skill .flex-chips {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .skills-container .skills-grid .skill .flex-chips .chip-title {
+        display: block;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .skills-container {
+        padding: 65px 60px;
+    }
+
+    .skills-container .skills-grid {
+        gap: 25px;
+        max-width: 1200px;
+    }
+
+    .skills-container .skills-grid .skill > svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .skills-container .skills-grid .skill h2,
+    .skills-container .skills-grid .skill h3 {
+        font-size: 0.85rem;
+    }
+
+    .skills-container .skills-grid .skill p {
+        width: 100%;
+        height: 105px;
+        margin: 0 0 25px 0;
+        color: rgba(255, 255, 255, 0.92);
+        font-family: "Ubuntu", sans-serif;
+        font-size: 0.80rem;
+        font-weight: 350;
+        line-height: 1.45;
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 50px 30px;
+
+        text-align: center;
+        min-height: auto;
+    }
+
+    .skills-container > h1 {
+        text-align: center;
+
+        font-size: 1.2rem;
+
+        margin-bottom: 30px;
+    }
+
+    .skills-container .skills-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .skills-container .skills-grid .skill {
+        padding-bottom: 0;
+    }
+
+    .skills-container .skills-grid .skill > svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    .skills-container .skills-grid .skill h2,
+    .skills-container .skills-grid .skill h3 {
+        font-size: 0.9rem;
+    }
+
+    .skills-container .skills-grid .skill p {
+        max-width: 500px;
+
+        font-size: 0.72rem;
+
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 567px) {
+
+    .skills-container {
+        padding: 40px 20px;
+    }
+
+    .skills-container > h1 {
+        font-size: 1rem;
+
+        margin-bottom: 25px;
+    }
+
+    .skills-container .skills-grid {
+        gap: 35px;
+    }
+
+    .skills-container .skills-grid .skill > svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .skills-container .skills-grid .skill h2,
+    .skills-container .skills-grid .skill h3 {
+        font-size: 0.82rem;
+    }
+
+    .skills-container .skills-grid .skill p {
+        font-size: 0.68rem;
+    }
+
+    .chip {
+        font-size: 0.48rem !important;
+
+        height: 21px !important;
+    }
+
+    .chip span {
+        font-size: 0.48rem;
     }
 }

@@ -1,3 +1,62 @@
+/* =========================================================
+   PROFESSIONAL EXPERIENCE SECTION
+   ========================================================= */
+
+.container.content-section#history {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 65px 60px 65px 130px;
+    position: relative;
+    
+    /* Background image with cover sizing */
+    background-image: url('../images/websitebackground.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Dark overlay for text readability */
+.container.content-section#history::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.58);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Ensure content appears above the overlay */
+.container.content-section#history > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Professional Experience title - ABOUT ME styling */
+.container.content-section#history > h1 {
+    display: block;
+    margin: 0 0 35px 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   VERTICAL TIMELINE STYLING
+   ========================================================= */
+
+.timeline-item p {
+  text-align: justify;
+}
+
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
@@ -20,19 +79,50 @@
 }
 
 .vertical-timeline-element span {
-    color: rgb(39, 40, 34);
+    color: rgb(177, 203, 46);
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.95rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-0%);
+}
+
+/* Dates on the LEFT side of the timeline */
+.vertical-timeline-element:nth-child(odd) .vertical-timeline-element-date {
+    right: auto;
+    left: calc(120% + 25px);
+    text-align: left;
+}
+
+/* Dates on the RIGHT side of the timeline */
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-date {
+    left: auto;
+    right: calc(110% + 25px);
+    text-align: right;
 }
 
 .svg-inline--fa {
-    color: white;
+    color: rgb(9, 97, 6);
 }
 
-@media screen and (max-width: 1170px) {
+
+@media screen and (max-width: 1100px) {
     .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
+        color: rgb(71, 201, 69);
+    }
+}
+
+@media (max-width: 768px) {
+    .container.content-section#history {
+        padding: 65px 5% 65px 100px;
+    }
+
+    .container.content-section#history > h1 {
+        font-size: 1.8rem;
     }
 }

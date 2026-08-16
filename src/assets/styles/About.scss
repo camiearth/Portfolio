@@ -1,0 +1,494 @@
+/* =========================================================
+   ABOUT SECTION
+   ========================================================= */
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+  overflow: hidden;
+  color: #ffffff;
+
+  /* Background image with cover sizing */
+  background-image: url('../images/websitebackground.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER - 2 COLUMN GRID
+   ========================================================= */
+
+.about-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 620px;
+  margin: 0 auto;
+  padding: 100px;
+  padding-left: 18%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   TEXT AREA - LEFT COLUMN
+   ========================================================= */
+
+.about-text {
+  width: 100%;
+  text-align: left;
+}
+
+
+/* ABOUT ME LABEL */
+
+.about-label {
+  display: block;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* ABOUT ME HEADING */
+
+.about-text h1 {
+  margin: 0 0 25px 0;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.about-description {
+  width: 100%;
+}
+
+
+.about-description p {
+  margin: 0 0 1.2rem 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.10rem;
+  font-weight: 350;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RIGHT COLUMN: KEY ACHIEVEMENTS SIDEBAR (FIXED)
+   ========================================================= */
+
+.achievements-box {
+  background: rgba(244, 239, 239, 0.978);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.8rem;
+  backdrop-filter: blur(10px);
+  height: fit-content;
+  max-width: 350px;
+  width: 100%;
+}
+
+.achievements-box h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(12, 10, 10, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 1.5rem 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.achievement-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 4px solid rgba(65, 162, 4, 0.809);
+}
+
+.achievement-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.achievement-item h4 {
+  font-size: 0.9rem;
+  color: rgba(14, 9, 9, 0.95);
+  font-weight: 600;
+  margin: 0 0 0.3rem 0;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.achievement-item p {
+  font-size: 0.6rem;
+  color: rgb(15, 9, 9);
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+
+/* =========================================================
+   MOLECULAR / AI VISUAL (HIDDEN)
+   ========================================================= */
+
+.about-visual {
+  display: none;
+}
+
+
+/* =========================================================
+   ORBITS
+   ========================================================= */
+
+.molecule-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1.2px solid rgba(139, 219, 160, 0.55);
+  box-shadow:
+    0 0 10px rgba(75, 157, 91, 0.25),
+    inset 0 0 10px rgba(75, 157, 91, 0.08);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-one {
+  width: 230px;
+  height: 95px;
+  border-color: rgba(160, 230, 175, 0.65);
+  transform:
+    translate(-50%, -50%)
+    rotate(25deg);
+}
+
+.orbit-two {
+  width: 230px;
+  height: 95px;
+  transform:
+    translate(-50%, -50%)
+    rotate(-35deg);
+}
+
+.orbit-three {
+  width: 190px;
+  height: 75px;
+  border-color: rgba(225, 240, 231, 0.5);
+  transform:
+    translate(-50%, -50%)
+    rotate(75deg);
+}
+
+
+/* =========================================================
+   MOLECULAR BONDS
+   ========================================================= */
+
+.molecule-bond {
+  position: absolute;
+  height: 1px;
+  background: rgba(225, 240, 231, 0.6);
+  transform-origin: left center;
+}
+
+.bond-one {
+  width: 85px;
+  top: 85px;
+  left: 50px;
+  transform: rotate(30deg);
+}
+
+.bond-two {
+  width: 75px;
+  top: 125px;
+  left: 100px;
+  transform: rotate(-35deg);
+}
+
+.bond-three {
+  width: 80px;
+  top: 145px;
+  left: 70px;
+  transform: rotate(60deg);
+}
+
+
+/* =========================================================
+   MOLECULAR DOTS
+   ========================================================= */
+
+.molecule-dot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 30%,
+    #ffffff 0%,
+    rgba(180, 235, 195, 0.9) 55%,
+    rgba(75, 157, 91, 0.75) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 0 10px rgba(139, 219, 160, 0.55);
+}
+
+.dot-one {
+  top: 60px;
+  left: 45px;
+}
+
+.dot-two {
+  top: 70px;
+  right: 45px;
+}
+
+.dot-three {
+  bottom: 60px;
+  left: 65px;
+}
+
+.dot-four {
+  bottom: 45px;
+  right: 70px;
+}
+
+.dot-five {
+  top: 120px;
+  left: 125px;
+  width: 14px;
+  height: 14px;
+}
+
+
+/* =========================================================
+   AI CENTER
+   ========================================================= */
+
+.ai-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(160, 230, 175, 0.75);
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(75, 157, 91, 0.35),
+    rgba(15, 45, 34, 0.55) 70%
+  );
+  backdrop-filter: blur(3px);
+  box-shadow:
+    0 0 18px rgba(139, 219, 160, 0.45),
+    inset 0 0 12px rgba(139, 219, 160, 0.2);
+  color: rgba(255, 255, 255, 0.97);
+  font-family: "Ubuntu", sans-serif;
+  z-index: 5;
+}
+
+.ai-icon svg {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  color: rgba(180, 235, 195, 0.95);
+  filter: drop-shadow(0 0 4px rgba(139, 219, 160, 0.6));
+}
+
+.ai-icon span {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    padding: 65px 40px;
+    gap: 2.5rem;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .achievements-box {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .about-description p {
+    font-size: 0.92rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - STACK TO SINGLE COLUMN
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .about-section {
+    min-height: auto;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 30px;
+    gap: 1.5rem;
+    padding-left: 5%;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-label {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+
+  .about-text h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .about-description p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .achievements-box {
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .achievement-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .achievement-item h4 {
+    font-size: 0.75rem;
+  }
+
+  .achievement-item p {
+    font-size: 0.65rem;
+  }
+
+  .about-visual {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .about-inner {
+    padding: 40px 20px;
+    padding-left: 5%;
+  }
+
+  .about-text h1 {
+    font-size: 1.1rem;
+  }
+
+  .about-description p {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .achievements-box {
+    padding: 1.2rem;
+    max-width: 100%;
+  }
+
+  .achievements-box h3 {
+    font-size: 0.75rem;
+  }
+
+  .achievement-item {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .achievement-item h4 {
+    font-size: 0.7rem;
+  }
+
+  .achievement-item p {
+    font-size: 0.6rem;
+  }
+
+  .orbit-one,
+  .orbit-two {
+    width: 155px;
+    height: 65px;
+  }
+
+  .orbit-three {
+    width: 130px;
+    height: 55px;
+  }
+}
