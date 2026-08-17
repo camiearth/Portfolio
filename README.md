@@ -1,6 +1,6 @@
 # Camilla Lo Conte
 
-Welcome to my personal portfolio  
+Welcome to my page :)
 
 ## 🌐 Portfolio
 
