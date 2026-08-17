@@ -118,17 +118,39 @@
 
 @media (max-width: 768px) {
     .container.content-section#history {
-        padding: 65px 10% 65px 10%;    
+        padding: 65px 10% 65px 10%;
     }
 
     .container.content-section#history > h1 {
         font-size: 1.8rem;
     }
-    
-    /* Hide dates on mobile */
+
+    /* Position dates inside the card on mobile */
     .vertical-timeline-element-date {
-        display: none !important;
+        position: static !important;
+        display: block !important;
+        color: rgb(0, 0, 0) !important;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin: 8px 0;
+        text-align: center;
+        transform: none !important;
+        width: auto !important;
+        left: auto !important;
+        right: auto !important;
+    }
+
+    /* Reduce font sizes in timeline cards */
+    .vertical-timeline-element-title {
+        font-size: 1rem;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .vertical-timeline-element p {
+        font-size: 0.85rem;
     }
 }
-
     
