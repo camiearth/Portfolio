@@ -1,7 +1,7 @@
-body {
-  background-image: url("C:\Users\camil\OneDrive\Desktop\ReactJS\my-app\React-Portfolio\react-portfolio-template\src\assets\videos\forest.mp4");
-  background-size: cover;
-  background-attachment: fixed;
+html, body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 /* Fade in animation */
@@ -12,6 +12,12 @@ body {
   to {
     opacity: 1;
   }
+}
+
+body {
+  background-image: url("C:\Users\camil\OneDrive\Desktop\ReactJS\my-app\React-Portfolio\react-portfolio-template\src\assets\videos\forest.mp4");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-with-video {
