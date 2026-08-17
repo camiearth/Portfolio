@@ -1,3 +1,11 @@
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #fdfdff;
+}
 .navigation-bar .nav-btn.active,
 .navigation-bar .nav-btn.active.MuiButton-root {
   color: #fbfbfb !important;

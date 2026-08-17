@@ -26,7 +26,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.58);
+    background: rgba(0, 0, 0, 0.55);
     pointer-events: none;
     z-index: 0;
 }
@@ -129,17 +129,30 @@
     .vertical-timeline-element-date {
         position: static !important;
         display: block !important;
-        color: rgb(0, 0, 0) !important;
-        font-size: 0.8rem;
+
+        /* Center the date */
+        width: 100% !important;
+        text-align: center !important;
+
+        /* Smaller date */
+        font-size: 0.75rem !important;
         font-weight: bold;
-        margin: 8px 0;
-        text-align: center;
+
+        /* Spacing */
+        margin: 8px 0 12px 0;
+
+        /* Remove desktop positioning */
         transform: none !important;
-        width: auto !important;
         left: auto !important;
         right: auto !important;
-    }
 
+        /* Date color */
+        color: rgb(0, 0, 0) !important;
+
+        /* Optional font */
+        font-family: "Ubuntu", sans-serif;
+        }
+    
     /* Reduce font sizes in timeline cards */
     .vertical-timeline-element-title {
         font-size: 1rem;
