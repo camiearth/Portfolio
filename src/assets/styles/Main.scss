@@ -4,6 +4,20 @@ body {
   background-attachment: fixed;
 }
 
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-with-video {
+  animation: fadeIn 0.5s ease-in;
+}
+
 .hero-with-video {
   position: relative;
   min-height: 100vh; // ridotto dal 100vh originale (-50%)

@@ -124,4 +124,11 @@
     .container.content-section#history > h1 {
         font-size: 1.8rem;
     }
+    
+    /* Hide dates on mobile */
+    .vertical-timeline-element-date {
+        display: none !important;
+    }
 }
+
+    
