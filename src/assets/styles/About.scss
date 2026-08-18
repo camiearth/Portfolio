@@ -118,7 +118,7 @@
 
 .achievements-box {
   background: rgba(244, 239, 239, 0.978);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(4, 0, 0, 0.15);
   border-radius: 12px;
   padding: 1.8rem;
   backdrop-filter: blur(10px);
@@ -140,7 +140,7 @@
 .achievement-item {
   margin-bottom: 1rem;
   padding-bottom: 1.2rem;
-  border-bottom: 4px solid rgba(65, 162, 4, 0.809);
+  border-bottom: 2px solid rgba(33, 82, 4, 0.809);
 }
 
 .achievement-item:last-child {

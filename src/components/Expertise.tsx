@@ -22,6 +22,7 @@ const labelsSecond = [
     "GROMACS",
     "AutoDock Vina",
     "UCSF Chimera",
+    "DFT"
 ];
 
 const labelsThird = [
@@ -34,6 +35,8 @@ const labelsThird = [
     "Data Analysis and Visualization",
     "Linux",
     "HPC",
+    "MongoDB",
+    "SQL"
 ];
 
 function Expertise() {
@@ -77,9 +80,9 @@ function Expertise() {
                             <h3>Chemistry</h3>
 
                             <p>
-                                Strong background in chemistry, with a focus on
-                                organic chemistry, cosmetology, medicinal
-                                chemistry, DFT, and catalysis.
+                                Strong background in 
+                                organic chemistry, medicinal
+                                chemistry, quantum chemistry, and catalysis.
                             </p>
 
                             <div className="flex-chips">

@@ -49,7 +49,7 @@ function About() {
           <div className="achievements-box">
             <h3>Key Achievements</h3>
             <div className="achievement-item">
-              <h4>AI Researcher @ ICIQ</h4>
+              <h4>AI PhD Researcher @ ICIQ</h4>
               <p>AI for Materials Science</p>
             </div>
             <div className="achievement-item">

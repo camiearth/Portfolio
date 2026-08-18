@@ -29,7 +29,7 @@ function Main() {
           </div>
           <h1 className="main-title" style={{ color: '#fff' }}>Camilla L.C.</h1>
           <p className="subtitle-green" style={{ color: '#4b9d5b' }}>Computational Scientist</p>
-          <p className="tagline" style={{ color: '#fff' }}>AI &nbsp;|&nbsp; Chemistry &nbsp;|&nbsp; Scientific Computing</p>
+          <p className="tagline" style={{ color: '#fff' }}>AI PhD Researcher @ICIQ &nbsp;|&nbsp; | AI & Machine Learning &nbsp;|&nbsp; Quantum Chemistry</p>
 
           <div className="hero-buttons">
             <Button

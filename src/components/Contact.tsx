@@ -12,7 +12,7 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Feel free to connect with me on LinkedIn,  or send me an email 😊</p>
+          <p>Feel free to connect with me on LinkedIn or reach out via email 😊</p>
           <Box className="contact-links" display="flex" gap={3} flexWrap="wrap">
             {/* LinkedIn Button with modern style */}
             <Button
